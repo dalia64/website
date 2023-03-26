@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    
+}
+.color{
+    
+    background-image: linear-gradient(to right, rgb(132, 179, 241), rgb(175, 223, 255), rgb(132, 179, 241));
+}
+header{
+    margin-top:5%;
+}
+.center{
+    text-align: center;
+}
+#h1{
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #2e3031;
+}
+main{
+    background-color: rgba(251, 251, 251, 0.7);
+    padding: 10px;
+}
+.sign-in{
+    width:40%;
+    margin:auto;
+}
+#h2{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(51, 92, 114);
+}
+#btn{
+    padding: 10px;
+    background-color: rgb(63, 112, 139);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10%;
+}
+
+    #btn:hover{
+        background-color: rgb(51, 92, 114);
+    }
+
+#link-id{
+    text-align: center;
+    color: rgb(51, 92, 114);
+}
+
+.link-class{
+    text-decoration: none;
+    color: rgb(51, 92, 114);
+    font-weight: bold;
+}
+
+.link-class:hover{
+    color: black;
+}
