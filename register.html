@@ -352,6 +352,21 @@ lastnameInput.addEventListener('input', () => {
     
         return false;
     }
+        
+        // skip pages if not student 
+        if  (!document.getElementById("studentCheckbox").checked ) {
+
+            if (currentTab == 1){
+                currentTab = currentTab + n;
+            }
+
+            if (currentTab == 3) {
+                document.getElementById("regForm").submit();
+                window.location.href = "index.html"; 
+                return false;
+            }
+        }
+        
     // Otherwise, display the correct tab:
         showTab(currentTab);
     }
