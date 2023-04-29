@@ -322,7 +322,7 @@ lastnameInput.addEventListener('input', () => {
         document.getElementById("prevBtn").style.display = "inline";
         
         }
-        if (n == (x.length - 1)) {
+        if (n == (x.length - 1) || (currentTab == 2 && ! document.getElementById("studentCheckbox").checked)) {
         document.getElementById("nextBtn").innerHTML = "Submit";
         } else {
         document.getElementById("nextBtn").innerHTML = "הבא";
