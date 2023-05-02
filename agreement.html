@@ -14,11 +14,10 @@
 
     <header>
         <div> <img src="img/logo.png" width="100px" height="100px"></div>
-        <p><input id="btn" type="button" value="הפרופיל שלי"></p>
+        <p><input class="but" type="button" value="הפרופיל שלי"></p>
     </header></br>
 
     <main>
-        
         <h1> חתימה על הסכם </h1> </br>
 
         <section class="agreement bcg">
@@ -37,21 +36,25 @@
             </div> </br>
 
             <img class="icon" src="img/message.png" alt="Message" style="float:right">
-            <p> לאחר ששני הצדדים יעלו הסכם חתום, ישלח אליך מייל אישי עם אישור חתימת ההסכם </p>
+            <p> לאחר ששני הצדדים יעלו הסכם חתום, ישלח אליך מייל אישי ממנהל המערכת עם אישור חתימת ההסכם </p>
             
 
         </section> </br> </br>
 
         <h1> הצטרפות להוראת קבע </h1> </br>
+        <p id="info">
+            הוראת קבע זו נועדה להעברת תשלום באופן קבוע מהסטודנט לקשיש לאורך כל התקופה בה הסטודנט מתגורר אצל הקשיש.  </br>
+            *התשלום החודשי נקבע בחוזה הנחתם למעלה
+        </p>
 
         <section class="payment bcg">
 
-            <div> 
+            <form> 
                 <label>שם בעל הכרטיס</label>
                 <input type="text" name="cardname" placeholder="Ben Levi" required>
 
                 <label>מספר כרטיס</label>
-                <input type="number" name="cardnumber" placeholder="1111222233334444" required max="99999999999999999" min="1111111111111111">
+                <input type="text" id="card-num" name="cardnumber" placeholder="1111222233334444" maxlength="16" required>
                 </br></br>
 
                 <label for="expmonth">חודש</label>
@@ -87,13 +90,12 @@
                     <option value="2034">2034</option>
                 </select>
                 <label>CVV</label>
-                <input type="number" name="cvv" placeholder="352" required min="100" max="999"> 
+                <input type="text" id="cvv" name="cvv" placeholder="352" maxlength="3" required> 
                 
                 </br></br>
 
-                <p id="btn-id"> <input id="btn" type="button" value="שמור"></p>
-            
-            </div>
+                <p id="btn-id"> <input class="but" id="submit-elm" type="button" value="שמור"></p>
+            </form>
         </section>
 
     </main>
@@ -114,6 +116,27 @@
         actualBtn.addEventListener('change', function(){
             fileChosen.textContent = this.files[0].name
         })
+
+        const submitElm = document.getElementById('submit-elm');
+        const cardNum = document.getElementById('card-num');
+        const cvv = document.getElementById('cvv');
+
+        submitElm.addEventListener('click', e => {
+            if(!cardNum.value || !cvv.value){
+                alert('יש למלא את כל השדות');
+                return;
+            }
+            if(!isNumber(cardNum.value) || !isNumber(cvv.value)){
+                alert('יש להכניס רק מספרים בשדות המתאימים');
+                return;
+            }
+            window.location.href = " "; 
+        })
+
+        function isNumber(text){
+            if(!text){return false;}
+            return text.match(/^[0-9]+$/) != null;
+        }
 
     </script>
 </body>
