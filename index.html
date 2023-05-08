@@ -20,18 +20,21 @@
     <main>
         <div class="sign-in">
             <h2 id="h2"> התחברות</h2>
-            <div class="form-floating mb-3">
-                <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                <label for="floatingPassword">Password</label>
-            </div>
+
+            <form action="php/user.php" method="post"></form>
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+            </form>
             </br>
             <p id="link-id">פעם ראשונה אצלנו? <a href="register.html" class="link-class">הירשמו כאן</a> </p>
 
-            <p class="center"><input class="but" type="button" value="התחברות"></p>
+            <p class="center"><input class="but" type="submit" value="התחברות" onclick="location.href='profile.html'"></p>
         </div>
     </main>
     </br>
