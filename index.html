@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/css/cssForProject.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <title>התחברות</title>
+</head>
+
+<body class="color">
+
+    <header class="center">
+        <h1 id="h1">צעד למען הגיל השלישי</h1>
+        <img src="/img/logo.png" width="150px" height="150px">
+    </header> </br>
+
+    <main>
+        <div class="sign-in">
+            <h2 id="h2"> התחברות</h2>
+
+            <form action="/php/user.php" method="post">
+                <div class="form-floating mb-3">
+                    <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <label for="floatingPassword">Password</label>
+                </div>
+            
+                </br>
+                <p id="link-id">פעם ראשונה אצלנו? <a href="register.html" class="link-class">הירשמו כאן</a> </p>
+                <p class="center"><input class="but" type="submit" name="submit1" value="התחברות"></p>
+            </form>
+        </div>
+    </main>
+    </br>
+
+    <footer>
+        <hr>
+        <p> מעוניינים ליצור קשר? דברו איתנו: <a href="mailto:Support@StepForThirdAge.com"> Support@StepForThirdAge.com </a> </p>
+        <br />
+    </footer>
+    
+</body>
+</html>
