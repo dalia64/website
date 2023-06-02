@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+}
+
+html, body {
+    height:100%;
+}
+
+.color{
+    background-image: linear-gradient(to right, rgb(132, 179, 241), rgb(175, 223, 255), rgb(132, 179, 241));
+}
+
+header{    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(251, 251, 251, 0.4);
+}
+
+    header img{
+        margin-left: 2%;
+    }
+
+    header p{
+        margin-right: 2%;
+    }
+
+.but{
+    padding: 10px;
+    background-color: rgb(63, 112, 139);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10%;
+}
+
+    .but:hover{
+        background-color: rgb(51, 92, 114);
+    }
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #2e3031;
+}
+
+.bcg{
+    background-color: rgba(251, 251, 251, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+.agreement{
+    margin:auto;
+    width: 40%;
+    height: 35%;
+}
+
+    .agreement h4{
+        text-align: right;
+        display: inline;
+    }
+
+    .agreement div{
+        text-align: right;
+        margin-right: 2%;
+        padding:2%;
+    }
+
+.icon{
+    width:30px;
+    height:30px;
+}
+
+#file-chosen{
+    margin-left: 0.3rem;
+    font-family: sans-serif;
+}
+
+    .agreement p{
+        text-align: right;
+    }
+
+.payment{
+    margin:auto;
+    width: 50%;
+}
+
+    .payment form{
+        text-align: center;
+        direction: rtl;
+        padding:2%;
+        margin-right: 2%;
+    }
+
+#btn-id{
+    margin-top: 2%;
+    text-align: center;
+    margin-left: 8%;
+}
+
+#info{
+    text-align: center;
+    direction: rtl;
+}
+
+
+footer{
+    background-color:rgba(251, 251, 251, 0.3);
+    text-align:center;
+    margin:auto;
+    font-size:16px;
+    font-weight:bold;
+    direction: rtl;
+}
+
+    footer a{
+        text-decoration: none;
+        color: rgb(51, 92, 114);
+    }
+
+    footer a:hover{
+        font-weight: bold;
+        color: rgb(36, 132, 184);
+    }
+
+
+@media (max-width: 1000px) {
+    .agreement{
+        width: 80%;
+    }
+
+    .payment{
+        width: 80%;
+    }
+}

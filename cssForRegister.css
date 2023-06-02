@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+    margin:0px;
+    direction: rtl;
+}
+
+.color{
+    background-image: linear-gradient(to right, rgb(132, 179, 241), rgb(175, 223, 255), rgb(132, 179, 241));
+}
+
+header{
+    margin-top:5%;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #2e3031;
+}
+
+h3{
+    color: rgb(51, 92, 114);
+    text-align: center;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+header img{
+    text-align: right;
+}
+
+[class*="col-"] {
+    margin: auto;
+    
+}
+
+.bcg{
+    background-color: rgba(251, 251, 251, 0.7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 15px;
+}
+
+.but{
+    margin-left: 35px;
+    overflow:auto;
+    float:left;
+}
+
+.my-button-class {
+    padding: 10px;
+    background-color: rgb(63, 112, 139);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 10%;
+}
+
+    .my-button-class:hover{
+        background-color: rgb(51, 92, 114);
+    }
+  
+#submitBut{
+    display:none;
+}
+
+label {
+    font-weight: bold;
+}
+
+input::file-selector-button {
+    font-weight: bold;
+    color: dodgerblue;   
+}
+
+form {
+    padding-bottom:5%;
+}
+
+input.invalid {
+    background-color: #ffdddd;
+  }
+  
+  /* Hide all steps by default: */
+.tab {
+    display: none;
+}
+  
+  /* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+  
+  /* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+  
+  /* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04AA6D;
+}
+
+.form-check-label{
+    float: right;
+    margin: 0px;
+    pad: 0px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+    .form-switch.form-switch-md {
+        margin-bottom: 1rem; /* JUST FOR STYLING PURPOSE */
+    }
+  
+    .form-switch.form-switch-md .form-check-input {
+        height: 1.5rem;
+        width: calc(2rem + 0.75rem);
+        border-radius: 3rem;
+    }
+
+.col-sm-6{
+    margin-left: 0px;
+}
+
+footer{
+    background-color:rgba(251, 251, 251, 0.3);
+    text-align:center;
+    margin:auto;
+    font-size:16px;
+    font-weight:bold;
+    direction: rtl;
+}
+
+    footer a{
+        text-decoration: none;
+        color: rgb(51, 92, 114);
+    }
+
+    footer a:hover{
+        font-weight: bold;
+        color: rgb(36, 132, 184);
+    }
+
